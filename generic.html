@@ -29,23 +29,52 @@
 							<section id="content" class="main">
 								<span class="image main"><img src="images/heic1502a_resized.jpg" alt="" /></span>
                                 <h2><b>Stellar-to-halo-mass relation </b> | <a href="https://arxiv.org/pdf/1001.0015.pdf">Behroozi 2010</a></h2>
-								<p> Understanding the connection between the galaxy properties and the dark matter halos they reside in and their coevolution is a powerful tool for constraining the processes related to galaxy formation. In particular, the stellar-to-halo mass relation (SHMR) and its evolution provides insights on galaxy formation models and allows us to assign galaxy masses to halos in N-body dark matter simulations. One way to infer this relation is to parametrize it and constrain the parameters which is one of the goals of Behroozi et. al 2010, in addition to a detailed and systematic analysis of the uncertainties involved in constraining the relation from the abundance matching technique. A summary of their model parameters can be found in Table 1.</p>
+								<p> Understanding the connection between the galaxy properties and the dark matter halos they reside in and their coevolution is a powerful tool for constraining the processes related to galaxy formation. In particular, the stellar-to-halo mass relation (SHMR) and its evolution provides insights on galaxy formation models and allows us to assign galaxy masses to halos in N-body dark matter simulations. One way to infer this relation is to parametrize it and constrain the parameters which is one of the goals of Behroozi et. al 2010, in addition to a detailed and systematic analysis of the uncertainties involved in constraining the relation from the abundance matching technique. A summary of their model parameters can be found in <b>Table 1</b> of the paper.</p>
+                                
+                                <p> The parameterization of the SHMR is as follows: </p>
                                 
                                 <div style="display: block; text-align: center">
-                                    <img src="images/behroozi.png" width="50%" height="50%">
+                                    <img src="http://latex.codecogs.com/svg.latex?\log _{10}\left(M_{h}\left(M_{*}\right)\right)=\log _{10}\left(M_{1}\right)+\beta \log _{10}\left(\frac{M_{*}}{M_{*, 0}}\right)+\frac{\left(\frac{M_{*}}{M_{*, 0}}\right)^{\delta}}{1+\left(\frac{M_{*}}{M_{*, 0}}\right)^{-\gamma}}-\frac{1}{2}" border="0"/>
+                                    
                                 </div>
                                 
-								<br><h2><b> Hybrid quenching model</b> | <a href="https://arxiv.org/pdf/1509.06758.pdf">Zu &amp; Mandelbaum 2015</a></h2>
-								<p>Galaxies are unable to form stars once their cold gas reservoirs have been depleted and thus go from being active to quiescent. Due to the enormous complexity in the formation history of individual galaxies, they can become quenched via a myriad of modes. So, it is more promising to focus on the underlying physical driver of the average quenching process, which is eventually tied to either the dark matter mass of the host halos, the galaxy stellar mass, or the small/large-scale environment density that the galaxies reside in. The two quenching models that Zu &amp; Mandelbaum focus on are halo-quenching and hybrid-quenching, the former assuming that host halo mass is the sole driver of quenching and the latter assuming it's a combination of galaxy stellar mass and host halo mass. A summary of their model parameters can be found in Table 2.</p>
+                                <br> where <img src="http://latex.codecogs.com/svg.latex?M_{1}" border="0"/> is the characteristic halo mass,
+                                <img src="http://latex.codecogs.com/svg.latex?M_{*, 0}" border="0"/> is the characteristic stellar mass, 
+                                <img src="http://latex.codecogs.com/svg.latex?\beta" border="0"/> is the low-mass slope and
+                                <img src="http://latex.codecogs.com/svg.latex?\delta" border="0"/> is the high-mass slope.
+                                
+								<br><br><h2><b> Hybrid quenching model</b> | <a href="https://arxiv.org/pdf/1509.06758.pdf">Zu &amp; Mandelbaum 2015</a></h2>
+								<p>Galaxies are unable to form stars once their cold gas reservoirs have been depleted and thus go from being active to quiescent. Due to the enormous complexity in the formation history of individual galaxies, they can become quenched via a myriad of modes. So, it is more promising to focus on the underlying physical driver of the average quenching process, which is eventually tied to either the dark matter mass of the host halos, the galaxy stellar mass, or the small/large-scale environment density that the galaxies reside in. The two quenching models that Zu &amp; Mandelbaum focus on are halo-quenching and hybrid-quenching, the former assuming that host halo mass is the sole driver of quenching and the latter assuming it's a combination of galaxy stellar mass and host halo mass. A summary of their model parameters can be found in <b>Table 2</b> of the paper.</p>
+                                
+                                
+                                <p> The parameterization of the model is as follows for red fraction of centrals: </p>
                                 
                                 <div style="display: block; text-align: center">
-                                    <img src="images/fred_cen.png" width="50%" height="50%">
+                                    <img src="http://latex.codecogs.com/svg.latex?f_{\mathrm{cen}}^{\mathrm{red}}\left(M_{*}, M_{h}\right) \equiv 1-g\left(M_{*}\right)=1-\exp \left[-\left(M_{*} / M_{*}^{q}\right)^{\mu}\right]" border="0"/>
+                                    
                                 </div> 
-                                <div style="display: block; text-align: center">
-                                    <img src="images/fred_sat.png" width="50%" height="50%">
-                                </div> 
+                                <br> where <img src="http://latex.codecogs.com/svg.latex?M_{*}^{q}" border="0"/> is the characteristic stellar mass and 
+                                <img src="http://latex.codecogs.com/svg.latex?\mu" border="0"/> is the pace of quenching with <img src="http://latex.codecogs.com/svg.latex?M_{*}" border="0"/>.
                                 
+                                <br><br><p>And as follows for red fraction of satellites: </p>
+                                <div style="display: block; text-align: center">
+                                    <img src="http://latex.codecogs.com/svg.latex?f_{\text {sat }}^{\text {red }}\left(M_{*}, M_{h}\right)=1-g\left(M_{*}\right) h\left(M_{h}\right)," border="0"/>
+
+                                    <br>with
+                                    <br><img src="http://latex.codecogs.com/svg.latex?h\left(M_{h}\right)=\exp \left[-\left(M_{h} / M_{h}^{q}\right)^{v}\right]" border="0"/>
+                                
+                                </div> 
+                                <br> where <img src="http://latex.codecogs.com/svg.latex?M_{h}^{q}" border="0"/> is the characteristic halo mass and 
+                                <img src="http://latex.codecogs.com/svg.latex?\nu" border="0"/> is the pace of satellite quenching.
+                                
+                                <footer class="major">
+                                    <ul class="actions special">
+                                        <li><a href="index.html" class="button">Home</a></li>
+                                    </ul>
+                            
+                                </footer>
 							</section>
+
 
 					</div>
 
